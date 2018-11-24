@@ -2,16 +2,21 @@ var mongoose = require('mongoose');
 var ObjectId = require('mongoose').Types.ObjectId;
 
 var schema = new mongoose.Schema({
-	producerName: {type: String},
+	actorName: {type: String},
+	address: {type: String},
+    DOB: {type: Date},
 	 createdDate: {type: Date, require: true, default: Date.now}
+    
 });
 
 //index
-schema.index({'name': 1});
+schema.index({'actorName': 1});
 
 
 // Model
-var model = mongoose.model('Producer', schema);
+var model = mongoose.model('Actors', schema);
 
 // Public API
 module.exports = model;
+
+
