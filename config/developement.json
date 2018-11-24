@@ -1,0 +1,12 @@
+{
+	"db": {
+
+		"mongo": {
+			"host": "localhost",
+			"port": 27017,
+			"username": null,
+			"password": null,
+			"db": "moview"
+		}
+	}
+}
