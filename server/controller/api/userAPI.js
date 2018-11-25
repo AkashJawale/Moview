@@ -34,7 +34,6 @@ function loginUser (req, res) {
 		res.json({result: response });
 	})
 
-	
 }
 
 
@@ -89,34 +88,6 @@ function removeUser (req, res) {
 		res.json({result: response });
 	})
 }
-
-
-
-
-// function removeUser (req, res) {
-// 	var response;
-// 	if(!req.body.username){
-// 		res.json({result: 'username missing parameter!' });
-// 		return;
-// 	}else if(!req.body.password){
-// 		res.json({result: 'password missing parameter!' });
-// 		return;
-// 	}
-// 	var parameters = {
-// 		username : req.body.username,
-// 		password : req.body.password
-// 	};
-// 	Users.remove(parameters,function(err,result){
-// 		if(result){
-// 			response = 'Removed Successfull';
-// 		}else{
-// 			response = 'Failed to remove!';
-// 		}
-// 		res.json({result: response });
-// 	})
-
-	
-// }
 
 
 

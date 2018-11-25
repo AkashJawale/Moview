@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-
-<!DOCTYPE html>
-<html>
+<html ng-app='app'>
 <head>
 	<meta charset="utf-8">
 	<title></title>
+	<script src="../lib/angular/angular.min.js"></script>
+	<script src="../lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	<script src="app.js"></script>
+
+    <script src="../modules/main/index.js"></script>
+	<script src="../modules/main/js/mainController.js"></script>
+
+	
+
 </head>
-<body>
+<body >
 <p>Welcome to Moview</p>
+
+<div style="position: relative;" ui-view></div>
 </body>
 </html>
